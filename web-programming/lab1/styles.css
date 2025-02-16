@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #272727;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+nav ul {
+    margin-top: 0;
+    background-color: #181818;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-text-size {
+    font-size: 19px;
+}
+
+.price {
+    color: green;
+}
+
+.box {
+    margin: 20px; 
+    padding: 10px; 
+    border-radius: 5px;         
+}
+
+
+/* Стиль для кнопки */
+.button {
+    padding: 10px 150px; /* Внутренние отступы */
+    background-color: #1d1d1d; /* Цвет фона */
+    color: rgb(255, 255, 255); /* Цвет текста */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Округление углов */
+    font-size: 18px; /* Размер шрифта */
+    cursor: pointer; /* Курсор в виде руки */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Анимация изменения фона и масштаба */
+}
+
+/* Стиль кнопки при наведении */
+.button:hover {
+    background-color: #000000; /* Темнее при наведении */
+    transform: scale(1.1); /* Немного увеличиваем размер */
+}
+
+/* Стиль кнопки при нажатии */
+.button:active {
+    transform: scale(1); /* Возвращаем исходный размер при нажатии */
+}
