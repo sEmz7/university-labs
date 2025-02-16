@@ -3,12 +3,12 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #cacaca;
 }
 
 header {
     background-color: #272727;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 20px;
     margin-bottom: 0;
 }
@@ -48,7 +48,7 @@ main {
 
 img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .about-text-size {
@@ -68,12 +68,13 @@ img {
 
 /* Стиль для кнопки */
 .button {
-    padding: 10px 150px; /* Внутренние отступы */
-    background-color: #1d1d1d; /* Цвет фона */
+    padding: 20px 150px; /* Внутренние отступы */
+    background-color: #181818; /* Цвет фона */
     color: rgb(255, 255, 255); /* Цвет текста */
     border: none; /* Без рамки */
-    border-radius: 5px; /* Округление углов */
-    font-size: 18px; /* Размер шрифта */
+    border-radius: 8px; /* Округление углов */
+    font-size: 22px;
+    /* Размер шрифта */
     cursor: pointer; /* Курсор в виде руки */
     transition: transform 0.3s ease, background-color 0.3s ease; /* Анимация изменения фона и масштаба */
 }
@@ -87,4 +88,11 @@ img {
 /* Стиль кнопки при нажатии */
 .button:active {
     transform: scale(1); /* Возвращаем исходный размер при нажатии */
+}
+
+.full-screen-image {
+    width: 60vw;
+    height: 80vh;
+    object-fit: cover;
+    margin-top: 20px;
 }
