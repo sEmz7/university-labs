@@ -12,22 +12,21 @@ header {
     padding: 20px;
     font-size: 22px;
     text-shadow: 
-        2px 2px 0px black,     /* Тень справа и вниз */
-        -2px -2px 0px black,   /* Тень слева и вверх */
-        2px -2px 0px black,    /* Тень справа и вверх */
+        2px 2px 0px black,
+        -2px -2px 0px black,
+        2px -2px 0px black,
         -2px 2px 0px black;
-    margin-bottom: 0;
+        margin-bottom: 0;
 }
 
 nav {
     background-color: #181818;
     padding: 20px 0;
-    position: sticky;  /* Делаем панель прилипающей */
-    top: 0;            /* Панель будет фиксироваться вверху */
-    width: 100%;       /* Панель будет на всю ширину */
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
-/* Стиль для списка навигации */
 nav ul {
     margin: 0;
     padding: 0;
@@ -43,7 +42,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
@@ -76,32 +75,28 @@ img {
 .box {
     margin: 20px; 
     padding: 10px; 
-    border-radius: 5px;         
+    border-radius: 5px;
+    font-size: 18px;      
 }
 
-
-/* Стиль для кнопки */
 .button {
-    padding: 20px 150px; /* Внутренние отступы */
-    background-color: #181818; /* Цвет фона */
-    color: rgb(255, 255, 255); /* Цвет текста */
-    border: none; /* Без рамки */
-    border-radius: 8px; /* Округление углов */
+    padding: 20px 150px;
+    background-color: #181818;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
     font-size: 22px;
-    /* Размер шрифта */
-    cursor: pointer; /* Курсор в виде руки */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Анимация изменения фона и масштаба */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Стиль кнопки при наведении */
 .button:hover {
-    background-color: #000000; /* Темнее при наведении */
-    transform: scale(1.1); /* Немного увеличиваем размер */
+    background-color: #000000;
+    transform: scale(1.1);
 }
 
-/* Стиль кнопки при нажатии */
 .button:active {
-    transform: scale(1); /* Возвращаем исходный размер при нажатии */
+    transform: scale(1);
 }
 
 .full-screen-image {
@@ -111,11 +106,10 @@ img {
     margin-top: 20px;
 }
 
-/* Стили для кнопки "Поддержи" */
 .support-button {
-    position: fixed;  /* Фиксированное положение */
-    bottom: 20px;     /* Отступ от низа */
-    right: 20px;      /* Отступ от правого края */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     padding: 15px 30px;
     background-color: #181818;
     color: white;
@@ -126,23 +120,21 @@ img {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Эффект при наведении на кнопку */
 .support-button:hover {
     transform: scale(1.1);
     background-color: #000000;
 }
 
-/* Стили для скрытого меню */
 .support-menu {
-    position: fixed;  /* Фиксированное положение */
-    bottom: 70px;     /* Отступ сверху от кнопки */
-    right: 20px;      /* Отступ от правого края */
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
     background-color: #fff;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    display: none;    /* Скрыто по умолчанию */
-    width: 200px;     /* Ширина меню */
+    display: none;
+    width: 200px;
 }
 
 .support-menu ul {
