@@ -25,7 +25,7 @@ namespace lab1
             Console.WriteLine("\n" + magazine);
 
 
-            
+
             Article[] singleCheck = new Article[1000000];
             for(int i = 0; i < 1000000; i++)
             {
@@ -56,10 +56,10 @@ namespace lab1
             watch.Start();
             for (int i = 0; i < 1000000; i++)
             {
-                singleCheck[i].Name = "newname";
+                singleCheck[i].ArticleName = "newname";
             }
             watch.Stop();
-            Console.WriteLine("\nОдномерный[1000000] = " + watch.ElapsedTicks + " ticks");
+            Console.WriteLine("\nОдномерный[1000000] = " + watch.ElapsedMilliseconds + " ms");
 
 
             watch.Restart();
@@ -67,23 +67,23 @@ namespace lab1
             {
                 for (int j = 0; j < 1000; j++)
                 {
-                    doubleCheck[i, j].Name = "newName";
+                    doubleCheck[i, j].ArticleName = "newName";
                 }
             }
             watch.Stop();
-            Console.WriteLine("Двумерный[1000,1000] = " + watch.ElapsedTicks + " ticks");
+            Console.WriteLine("Двумерный[1000,1000] = " + watch.ElapsedMilliseconds + " ms");
 
             watch.Restart();
             for (int i = 0; i < 1000; i++)
             {
                 for (int j = 0; j < 1000; j++)
                 {
-                    stepCheck[i][j].Name = "namenew";
+                    stepCheck[i][j].ArticleName = "namenew";
                 }
             }
             watch.Stop();
 
-            Console.WriteLine("Ступенчатый[1000][] = " + watch.ElapsedTicks + " ticks");
+            Console.WriteLine("Ступенчатый[1000][] = " + watch.ElapsedMilliseconds + " ms");
         }
     }
 }
