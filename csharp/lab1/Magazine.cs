@@ -87,7 +87,9 @@ namespace lab1
             }
             set
             {
-                arrayOfArticles = value;
+                if (value != null) {
+                    arrayOfArticles = value;
+                }
             }
         }
 
@@ -100,14 +102,14 @@ namespace lab1
                     double average = 0;
                     for (int i = 0; i < arrayOfArticles.Length; i++)
                     {
-                        average += arrayOfArticles[i].Rate;
+                        average += arrayOfArticles[i].ArticleRate;
                     }
                     return (average / arrayOfArticles.Length);
                 } else
                 {
                     return 0;
                 }
-                
+
             }
         }
 
